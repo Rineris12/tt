@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>rineris - Official</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{
+/* ปรับโทนสี ฟ้าเทอร์คอยซ์ และ ชมพู */
+--bg:#E0F7FA; /* พื้นหลังสีฟ้าอ่อน */
+--main:#40E0D0; /* สีฟ้าเทอร์คอยซ์หลัก */
+--dark:#008B8B; /* สีฟ้าเทอร์คอยซ์เข้มสำหรับตัวหนังสือ */
+--white:#FFFFFF;
+--pink:#FF9EBB; /* สีชมพู */
+--glow:rgba(64, 224, 208, 0.4);
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Mitr',sans-serif;}
+
+body{
+background:var(--bg);
+display:flex;
+justify-content:center;
+}
+
+.container{
+max-width:500px;
+width:100%;
+padding:20px 15px 40px;
+}
+
+.section{
+background:var(--white);
+border-radius:20px;
+padding:25px 20px;
+margin-bottom:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.05);
+border:2px solid var(--pink); /* ใช้สีชมพูเป็นกรอบ Section */
+}
+
+h1,h2,h3{color:var(--dark); margin-bottom: 15px;}
+.center{text-align:center;}
+
+.logo{
+width:150px;height:150px;
+border-radius:50%;
+overflow:hidden;
+margin:0 auto 20px;
+box-shadow:0 6px 20px var(--glow);
+border: 3px solid var(--white);
+}
+
+.logo img{width:100%;height:100%;object-fit:cover;}
+
+.badges{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+margin-bottom:20px;
+}
+
+.badge{
+background:#fff;
+padding:8px 16px;
+border-radius:25px;
+box-shadow:0 4px 10px var(--glow);
+font-size:13px;
+color:var(--dark);
+border: 1px solid var(--pink); /* เพิ่มขอบสีชมพูให้ Badge */
+}
+
+.btn{
+display:block;
+text-align:center;
+padding:14px;
+border-radius:25px;
+text-decoration:none;
+margin-top:15px;
+font-weight:500;
+}
+
+.btn-outline{
+background:#fff;
+border:2px dashed var(--main);
+color:var(--dark);
+}
+
+.btn-main{
+background:var(--main);
+color:#fff;
+box-shadow:0 4px 10px var(--glow);
+}
+
+.step{
+display:flex;
+align-items:center;
+gap:12px;
+margin-bottom:12px;
+font-size: 14px;
+color: var(--dark);
+}
+
+.step-num{
+background:var(--pink); /* ใช้สีชมพูสำหรับเลขขั้นตอน */
+color:#fff;
+width:26px;height:26px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:13px;
+flex-shrink: 0;
+}
+
+.price-row{
+display:flex;
+justify-content:space-between;
+margin-bottom:10px;
+background:#F8FDFF;
+padding:10px 15px;
+border-radius:15px;
+color: var(--dark);
+}
+
+.price-tag{
+background:var(--pink); /* ป้ายราคาสีชมพู */
+color:#fff;
+padding:3px 12px;
+border-radius:20px;
+font-size:14px;
+}
+
+.footer{
+text-align:center;
+margin-top:30px;
+}
+
+.socials{
+display:flex;
+gap:8px;
+justify-content:center;
+margin-top:15px;
+}
+
+.socials a{
+flex:1;
+max-width:110px;
+text-align:center;
+padding:8px;
+border-radius:25px;
+background:#fff;
+text-decoration:none;
+color:var(--dark);
+font-size:13px;
+border:1px solid var(--main);
+}
+
+.small{font-size:12px;color:var(--dark);opacity:.7;margin-top:10px;}
+
+/* คลาสเพิ่มเติมสำหรับรูปภาพและลิสต์ */
+.section-img {
+width: 100%;
+border-radius: 15px;
+margin-bottom: 15px;
+object-fit: cover;
+display: block;
+}
+
+.custom-list {
+padding-left: 20px;
+color: var(--dark);
+font-size: 14px;
+line-height: 1.6;
+}
+
+.custom-list li {
+margin-bottom: 8px;
+}
+
+.text-sub {
+text-align: center;
+color: var(--pink);
+font-weight: 500;
+margin-bottom: 15px;
+font-size: 15px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="section center" style="border:none;box-shadow:none;background:transparent;">
+
+<div class="logo">
+<img src="logo.jpg" alt="logo">
+</div>
+
+<h1>rineris</h1>
+<p style="color:var(--dark);opacity:.8;margin:10px 0 20px;">
+จะมูจะตัดหรือจะแต่ง
+</p>
+
+<div class="badges">
+<div class="badge">🎨 CapCut | ขายแอพ และรับตัดต่อ</div>
+<div class="badge">🔮 ดูดวง</div>
+<div class="badge">💻 เว็บรับทำป้าย</div>
+</div>
+
+<a href="https://docs.google.com/spreadsheets/d/1-OKt-yfrnf19eACPvXyUJ3y4PthRKt6yqn3fxFNYVJY/edit?usp=sharing" class="btn btn-outline" target="_blank">
+เช็คคิวงาน ✨
+</a>
+</div>
+
+<div class="section">
+<h2>🔮 สายมู</h2>
+<img src="mu1.jpg" alt="สายมู 1" class="section-img">
+<img src="mu2.jpg" alt="สายมู 2" class="section-img">
+<img src="mu3.jpg" alt="สายมู 3" class="section-img" style="margin-bottom: 0;">
+</div>
+
+<div class="section">
+<h2>🎬 CapCut</h2>
+<p class="text-sub">เริ่มต้น 25฿</p>
+<img src="capcut2.jpg" alt="CapCut 1" class="section-img">
+<img src="capcut3.jpg" alt="CapCut 2" class="section-img">
+<img src="capcut4.jpg" alt="CapCut 3" class="section-img" style="margin-bottom: 0;">
+</div>
+
+<div class="section">
+<h2>🎬 ราคาตัดต่อ</h2>
+<img src="cc.png" alt="ราคาตัดต่อ" class="section-img" style="margin-bottom: 0;">
+</div>
+
+<div class="section">
+<h2>⭐️ วิธีเข้าใช้งาน CapCut</h2>
+<img src="IMG_3136.jpg" alt="วิธีเข้าใช้งาน" class="section-img">
+<ul class="custom-list">
+<li>เข้าผ่าน <b>อีเมล & พาสเวิร์ด</b> (ห้าม login google)</li>
+<li>หากต้องการเข้าในคอม ต้องเข้าผ่านมือถือก่อน</li>
+<li>⤷ ต้องสแกน QR จากมือถือเท่านั้น</li>
+<li>⤷ เข้าคอมแล้ว <b>กรุณาออกจากโทรศัพท์ก่อน</b> เพื่อกันล็อกนะคะ</li>
+<li>ใช้ได้แค่ <b>1 เครื่องเท่านั้น!</b></li>
+</ul>
+</div>
+
+<div class="section">
+<h2>📋 เงื่อนไขการสั่งของร้าน</h2>
+<ul class="custom-list">
+<li>ตามปกติรองาน 24 ชม. แล้วแต่คิวของวันนั้นๆ หากคิวว่างเริ่มทันที</li>
+<li>คิวปกติ 1-7 วัน (งานตัดคลิป)</li>
+<li>คิวลัด +30 -150฿ (1-3 วัน)</li>
+<li>ต้องการงานทันที ดูที่สโคปงาน</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>📋 ขั้นตอนการสั่ง</h2>
+<p style="text-align:center; color:var(--pink); font-size:14px; margin-bottom:15px; font
